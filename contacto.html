@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container-nav">
+        <nav class="navbar" role="navigation">
+            <a href="#" class="brand">
+                <img src="imagenes/LogoMiubicar.png" height="70px" alt="">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="about.html">Quienes somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+    </header>
+
+    <main class="container-contacto">
+        <h1 id="h1-contacto">Contacto</h1>
+        <p>¡Contáctanos para cualquier consulta o solicitud de información!</p>
+        <form id="myForm">
+            <h2>Formulario de Contacto</h2>
+            <p>Esperamos sus comentarios</p>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="satisfaccion">Grado de satisfacción</label>
+                <input type="range" class="form-range" min="0" max="5" id="satisfaccion">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" class="form-control" placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <textarea class="form-control" id="comentarios" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+            
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
